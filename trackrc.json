@@ -1,0 +1,5 @@
+{
+  "api": "https://rd-beertap.herokuapp.com",
+  "storage": "beertap-tracks",
+  "storageEmail": "beertap-email"
+}
