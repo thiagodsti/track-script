@@ -4,6 +4,13 @@ window.trackAPI = (function loadTrack() {
 
     fetch('trackrc.json')
       .then(response => response.text())
+      .catch(err => {
+        return {
+          'api': 'https://rd-beertap.herokuapp.com',
+          'storage': 'beertap-tracks',
+          'storageEmail': 'beertap-email'
+        }
+      })
       .then(text => {
         try {
           const data = JSON.parse(text);
