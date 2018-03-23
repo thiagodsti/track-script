@@ -1,6 +1,4 @@
 /*eslint-disable */
-console.log(`${window.location.href}  ${localStorage.beertapUser}`);
-
 window.trackAPI = (function loadTrack() {
   return new Promise((resolve, reject) => {
 
